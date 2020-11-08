@@ -12,38 +12,40 @@
 <body>
 
     <!-- Main heading -->
+<header>
     <div class="pb-2 bg-primary pt-2"> 
         <div class="container">
             <h1 class="text-center text-white">What's the weather like?</h1>
         </div>
     </div>
-
+</header>
             <!-- Created container for the search -->
     <div class="container-fluid"> 
         <div class="row"> 
-
             <div class="col-lg-3 bg-primary pb-2"> 
-
                 <h5>Search for a city:</h5>
-                        <!-- insereted search/input class to have user type for city to search-->
-                <div class="input-group mb-3"> 
-                    <input id="searchTerm" type="text" class="form-control" placeholder="Search for city" class="input-group-append">
-                    <button id="searchButton" class="btn btn-light" type="button" id="button-addon2">Search<i class="far fa-search"></i></button>
-                </div>
-           
-                <div class="card"> 
-                    <ul class="list-group list-group-flush list">
-                    </ul>
-                </div> 
-            </div> 
+                <form id='' class="ml-auto form-inline">
+                   <div class="my-0 md-form"> 
+                    <input id="searchTerm" type="text" class="form-control" placeholder="Search for city">
+                 </div>
+                    <button id="searchCity" href="#" class="btn btn-light btn-md" type="button">Search
+                        <i class="far fa-search"></i>
+                       </button>
+                </form>
 
-            <div class="col-lg-9"> 
-                <div id="currentCity" class="mt-4">
-                    
-                </div>
-            </div>
-        </div> 
-     
+                <h3 id=""></h3> 
+                <ul></ul>
+     </div>
+
+        <div class='col-9'>
+            <div class="row" id='forecastToday'></div>
+        </div>
+
+        <div class="row">
+            <h3>Your5 Day Weather Forecast</h3>
+        </div>
+
+    
 
         <!-- new container for the five day forecast-->
         <div class="col-md-12 mt-4"> 
